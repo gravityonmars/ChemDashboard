@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ChemDashboard</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header class="main-header">
@@ -12,6 +13,50 @@
         <p class="subtitle">Click on the element to see its details.</p>
     </header>
 
+    <section id="periodic-table-wrapper">
+        <div id="periodic-table" class="grid-table">
+
+        </div>
+    </section>
+
+    <section id="tools-section">
+        <h2 class="section-title">Chemistry Toolkit</h2>
+        <div class="cards-container">
+            <a href="tools/galvanic/index.html">
+                <div class="card-icon"><i class="fas fa-bolt"></i></div>
+                <div class="card-content">
+                    <h3>Galvanic Cell Generator</h3>
+                    <p>Calculate cell potential and visualize the electron flow.</p>
+                </div>
+                <div class="card-arrow">&rarr;</div>
+            </a>
+            <a href="tools/molar/index.html">
+                <div class="card-icon"><i class="fas fa-bolt"></i></div>
+                <div class="card-content">
+                    <h3>Molar Mass Calculator</h3>
+                    <p>Compute atomic mass for any complex formula.</p>
+                </div>
+                <div class="card-arrow">&rarr;</div>
+            </a>
+            <a href="tools/solutions/index.html">
+                <div class="card-icon"><i class="fas fa-bolt"></i></div>
+                <div class="card-content">
+                    <h3>Solution Prep</h3>
+                    <p>Calculate molarity, dilution, and concentration.</p>
+                </div>
+                <div class="card-arrow">&rarr;</div>
+            </a>
+        </div>
+    </section>
+
+    <div id="element-modal" class="modal hidden">
+        <div class="modal-content">
+            <span id="close-modal">&times;</span>
+            <h2 id="modal-symbol">Fe</h2>
+            <h3 id="modal-name">Iron</h3>
+            <p id="modal-details">Atomic Mass: 55.845</p>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
